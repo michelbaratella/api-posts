@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.ATLAS_URL).then(() => {
+mongoose.connect(process.env.MONGO_URL).then(() => {
     console.log('Mongo connected')
 }).catch(err => {
     console.log('ERROR: '+ err)
